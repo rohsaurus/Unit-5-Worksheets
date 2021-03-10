@@ -166,12 +166,12 @@ void worksheet12_question6(string ws12Question6)
     getline (cin,character);
     int length_of_string = character.length();
     // Testing to make sure its one length
-    if (length_of_string > 1 || length_of_string > 0)
+    if (length_of_string != 1)
     {
-        while (length_of_string > 1 || length_of_string > 0)
+        while (length_of_string != 1)
         {
             cout << "The character can't be more than 1 in length.\n";
-            cout << "Enter in a character\n.";
+            cout << "Enter in a character.\n";
             getline(cin,character);
             length_of_string = character.length();
         }
@@ -252,6 +252,7 @@ void worksheet12_question6(string ws12Question6)
         }    
     }
 
+    cout << endl;
     // final output statemetn for character and length and rows
     for (int i = 0; i != lines_integer; i++)
     {

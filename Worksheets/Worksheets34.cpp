@@ -7,6 +7,7 @@
 */
 
 #include "Methods.h"
+#include <stdlib.h>
 //namespaces can sometimes cause problems make sure you are able to use it
 using namespace std;
 
@@ -61,7 +62,7 @@ double worksheet34_question3(string user_input,string ws34Question3)
     }
     
     // converting string to double
-    double user_input_double_format = stoi(user_input);
+    double user_input_double_format = atof(user_input.c_str());
 
     // Will double user input now
 
@@ -191,7 +192,7 @@ void worksheet34_question5(std::string ws34Question5,string integer)
     // print squared and cubed of number
     cout << integer_int << " squared is " << squared << ". " << integer_int << " cubed is " << cubing << endl;
     // Extra thing (allows user to request ^4 of the number
-    cout << "Would you like ^4 of your number?\n. Enter yes if you want it.\n";
+    cout << "Would you like ^4 of your number?\n Enter yes if you want it.\n";
     string choice;
     getline (cin,choice);
     if (choice == "yes")

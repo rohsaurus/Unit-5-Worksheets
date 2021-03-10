@@ -20,12 +20,13 @@ int main(int argc, char* argv[])
     string ws34Question5 = "Returning square and cube of number\n";
 
     // Worksheet 1-2 Methods
-   // worksheet12_question4(ws12Question4);
-    //worksheet12_question5(ws12Question5);
-    //worksheet12_question6(ws12Question6);
+    worksheet12_question4(ws12Question4);
+    worksheet12_question5(ws12Question5);
+    worksheet12_question6(ws12Question6);
 
     // taking user input for Question 3 on Worksheet 3-4
-    cout << "What number would you like to double.\n";
+    
+   cout << "What number would you like to double.\n";
     string user_input;
     getline (cin,user_input);
 
@@ -33,6 +34,7 @@ int main(int argc, char* argv[])
     double result = worksheet34_question3(user_input,ws34Question3);
     // printing result for user
     cout << "The doubled result is " << result << endl;
+
     
     // Rest of worksheet 2 methods
     worksheet34_question4(ws34Question4);
