@@ -6,6 +6,13 @@
 *Extra Thing for worksheets 3-4: In quesion 5,user has option to ask for the ^4 too if requested
 */
 
+
+
+// fix ws formatting
+// i dont think i can accept user input in main
+// i need to write a function or somethign
+
+
 #include "Methods.h"
 
 using namespace std;
@@ -26,9 +33,9 @@ int main(int argc, char* argv[])
 
     // taking user input for Question 3 on Worksheet 3-4
     
-   cout << "What number would you like to double.\n";
+    cout << "What number would you like to double.\n";
     string user_input;
-    getline (cin,user_input);
+    getline(cin,user_input);
 
     // Method for user
     double result = worksheet34_question3(user_input,ws34Question3);

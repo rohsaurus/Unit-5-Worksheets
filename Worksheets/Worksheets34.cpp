@@ -14,7 +14,7 @@ using namespace std;
 // Methods for Question 5
 
 // Cubing method for Question 5
-int cubed (int number)
+int cubed(int number)
 {
     int cubed = number * number * number;
     return cubed;
