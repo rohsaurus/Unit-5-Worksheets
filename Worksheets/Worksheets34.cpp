@@ -67,6 +67,10 @@ double worksheet34_question3(string user_input,string ws34Question3)
     // Will double user input now
 
     user_input_double_format = user_input_double_format * 2;
+
+    // printing result for user
+    cout << "The doubled result is " << user_input_double_format << endl;
+    
     // returning to main to be printed
     return user_input_double_format;
 }

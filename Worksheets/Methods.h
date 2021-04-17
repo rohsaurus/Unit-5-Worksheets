@@ -10,7 +10,7 @@
 #include <iostream>
 #include <iomanip>
 #include <sstream>
-
+#include <string>
 
 
 // Worksheet 1-2 methods
@@ -19,6 +19,11 @@ void worksheet12_question4(std::string ws12Question4);
 void worksheet12_question5(std::string ws12Question5);
 
 void worksheet12_question6(std::string ws12Question6);
+
+
+// user input functions
+std::string user_input_function_3(std::string functionName);
+std::string user_input_function_5(std::string functionName);
 
 
 // worksheet 3-4 methods

@@ -22,6 +22,8 @@ int main(int argc, char* argv[])
     string ws12Question4 = "Function that prints company heading";
     string ws12Question5 = "integers squared and added";
     string ws12Question6 = "take a charcter and two integers and print them\n";
+    string userinput_3 = "A function that accepts user input for question 3\n";
+    string userinput_5 = "User input function for question 5\n";
     string ws34Question3 = "Take user number and double it\n";
     string ws34Question4 = "Finding harmonic mean of two integers\n";
     string ws34Question5 = "Returning square and cube of number\n";
@@ -31,25 +33,24 @@ int main(int argc, char* argv[])
     worksheet12_question5(ws12Question5);
     worksheet12_question6(ws12Question6);
 
-    // taking user input for Question 3 on Worksheet 3-4
-    
-    cout << "What number would you like to double.\n";
-    string user_input;
-    getline(cin,user_input);
 
+
+    // function to accept userinput for question 3
+    string user_input = user_input_function_3(userinput_3);
+    
     // Method for user
     double result = worksheet34_question3(user_input,ws34Question3);
-    // printing result for user
-    cout << "The doubled result is " << result << endl;
 
     
     // Rest of worksheet 2 methods
     worksheet34_question4(ws34Question4);
 
-    // Asking user for which number they want squared and cubed
-    cout << "Enter an integer for which you want the square and cube of\n";
-    string integer;
-    getline(cin,integer);
+
+    // user input function for question 5
+
+    string integer = user_input_function_5(userinput_5);
+
+    // worksheet 3-4 question 5 method
     worksheet34_question5(ws34Question5,integer);
     
     return 0;

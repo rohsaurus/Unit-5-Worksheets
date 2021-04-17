@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="User_Input_Functions.cpp" />
     <ClCompile Include="Worksheet12.cpp" />
     <ClCompile Include="Worksheets.cpp" />
     <ClCompile Include="Worksheets34.cpp" />
